@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lab3 JS</title>
+    
+  </head>
+
+  <body>
+    <h1>ITI LAB3 JAVASCRIPT</h1>
+    <h2>Check console for answers</h2>
+    <p> <br><br>
+      1. you are required to, given a string, replace every letter with its position in the alphabet
+      If anything in the text isn't a letter, ignore it and don't return it."a" = 1, "b" = 2, etc.
+      <br><br>
+      Example: alphabet_position("The sunset sets at twelve o' clock.") Should return "20 8 5 19 21 14 19 5 20 19 5 20 19 1 20 20 23 5 12 22 5 15 3 12 15 3 11" ( as a string )
+      <br><br>
+          2. Your task is to sort a given string. Each word in the string will contain a single number. This number is the position the word should have in the result.
+      Note: Numbers can be from 1 to 9. So 1 will be the first word (not 0).
+      If the input string is empty, return an empty string. The words in the input String will only contain valid consecutive numbers.
+      <br><br>
+      Examples<br>
+      "is2 Thi1s T4est 3a"  -->  "Thi1s is2 3a T4est"<br>
+      "4of Fo1r pe6ople g3ood th5e the2"  -->  "Fo1r the2 g3ood 4of th5e pe6ople"<br>
+      ""  -->  ""<br>
+      <br><br>
+          3. Write a function called specialMultiply which accepts two parameters. If the function is passed both parameters, it should return the product of the two. If the function is only passed one parameter - it should return a function which can later be passed another parameter to return the product. You will have to use closure and arguments to solve this.
+          <br><br>
+      Examples:<br>
+      specialMultiply(3,4); // 12 <br>
+      specialMultiply(3)(4); // 12 <br>
+      specialMultiply(3); // function(){}....<br>
+      <br><br>
+          4. Write a function called guessingGame which takes in one parameter amount. The function should return another function that takes in a parameter called guess. In the outer function, you should create a variable called answer which is the result of a random number between 0 and 10 as well as a variable called guesses which should be set to 0.
+          <br><br>
+      In the inner function, if the guess passed in is the same as the random number (defined in the outer function) - you should return the string "You got it!". If the guess is too high return "Your guess is too high!" and if it is too low, return "Your guess is too low!". You should stop the user from guessing if the amount of guesses they have made is greater than the initial amount passed to the outer function.
+      <br><br>
+      You will have to make use of closure to solve this problem.
+      <br><br>
+      Examples (yours might not be like this, since the answer is random every time): <br>
+      var game = guessingGame(5) <br>
+      game(1) // "You're too low!" <br>
+      game(8) // "You're too high!" <br>
+      game(5) // "You're too low!" <br>
+      game(7) // "You got it!" <br>
+      var game2 = guessingGame(3) <br>
+      game2(5) // "You're too low!" <br>
+      game2(3) // "You're too low!" <br>
+      game2(1) // "No more guesses the answer was 0" <br>
+      <br><br>
+    </p>
+    <script src="script.js"></script>
+  </body>
+</html>
